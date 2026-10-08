@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+</head>
+<body>
+  <h1><%= title %></h1>
+  
+  <br>
+
+  <h3>기본 정보</h3>
+  <table border="1">
+    <tr>
+      <td>이름</td>
+      <td><%= name %></td>
+    </tr>
+    <tr>
+      <td>학과</td>
+      <td><%= department %></td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <h3>좋아하는 음식</h3>
+  <table border="1">
+    <tr>
+      <th>음식 목록</th>
+    </tr>
+    <% items.forEach(function(food) { %>
+      <tr>
+        <td><%= food %></td>
+      </tr>
+    <% }); %>
+  </table>
+  
+</body>
+</html>
